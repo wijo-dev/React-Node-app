@@ -1,0 +1,12 @@
+#app { 
+}
+
+.width1080 {
+  position: relative;
+  display: flex;
+  width: 1200px;
+  height: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: auto;
+}
