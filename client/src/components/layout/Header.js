@@ -1,10 +1,24 @@
 import React from 'react';
+import Axios from 'axios';
+import './Header.css';
 
 class Header extends React.Component {
+  componentDidMount() {
+    Axios({
+      method: 'get',
+      url: '/api'
+    })
+    .then(function (res) {
+      console.log(res.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
   render() {
     return(
-      <div>
-        <div class='width1080'>
+      <div class="headerDiv">
+        <div class='width-1080'>
           <div>
             <table>
               <tr>
@@ -54,7 +68,20 @@ class Header extends React.Component {
             </table>
           </div>
           <div>
-
+            <div id="top-10">
+              <span>인기글</span>
+              <ol>
+                <li>인기글 1</li>
+                <li>인기글 1222</li>
+                <li>인기글 1222123</li>
+                <li>인기글 1222</li>
+                <li>인기글 1222123</li>
+                <li>인기글 1222</li>
+                <li>인기글 1222123</li>
+                <li>인기글 1222</li>
+                <li>인기글 1222123</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,4 @@
-#app { 
-}
-
-.width1080 {
+.width-1080 {
   position: relative;
   display: flex;
   width: 1200px;
@@ -9,4 +6,5 @@
   -webkit-box-align: center;
   align-items: center;
   margin: auto;
+  z-index: -100;
 }

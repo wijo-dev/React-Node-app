@@ -3,7 +3,7 @@ import React from 'react';
 class Contents extends React.Component {
   render() {
     return(
-      <div>
+      <div class="contentsDiv">
         <h1>Contents</h1>
         <p>test</p>
       </div>
