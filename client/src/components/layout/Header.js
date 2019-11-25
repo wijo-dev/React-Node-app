@@ -18,7 +18,7 @@ class Header extends React.Component {
   render() {
     return(
       <div class="headerDiv">
-        <div class='width-1080'>
+        <div class='width'>
           <div>
             <table>
               <tr>
