@@ -7,13 +7,7 @@ Promise.promisifyAll(require('mysql/lib/Connection').prototype);
 Promise.promisifyAll(require('mysql/lib/Pool').prototype);
 
 const DB_INFO = {
-  host : '34.84.63.66',
-  user : 'bigbit',
-  password : 'bigbit13@a',
-  database : 'bigbit',
-  multipleStatements : true,
-  connectionLimit : 10,
-  waitForConnections : false
+  
 };
 
 module.exports = class {
