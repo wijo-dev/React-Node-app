@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .headerDiv {
   background: black;
   position: relative;
@@ -5,15 +7,51 @@
 .width {
   position: relative;
   display: flex;
-  width: 1080px;
-  height: 100%;
-  align-items: center;
-  margin: auto;
-  height: 100%;
-  -webkit-box-align: center;
-  height: 340px;
 }
-#top-10 {
+.exchangeQuotes {
+  height: 80%;
+  width: 824px;
+}
+table { 
+  height: 100%;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  /* Table reset stuff */
+  border-collapse: collapse; border-spacing: 0; 
+}
+td, th {  border: 0 none; height: 30px; }
+			
+th {
+  /* Gradient Background */
+	background: linear-gradient(#333 0%,#444 100%);
+	color: #FFF; font-weight: bold;
+	height: 40px;
+}
+		
+td { 
+  background: #FAFAFA; 
+  text-align: center; 
+  border-bottom: 1px solid #bfbc53;
+}
+
+/* Zebra Stripe Rows */
+tr td { background: none; }
+
+.top10 {
+  border: 1px solid;
+  padding: 8px;
+  width: 203px;
+  margin: 0px 0px 0px 34px;
   text-align: left;
-  margin: 12px 0px 12px 24px;
+}
+.top10 span {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+ol {
+  margin-left: 16px;
+}
+ol li {
+  margin: 6px 0px 3px 0;
 }

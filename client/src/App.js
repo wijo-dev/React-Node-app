@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Toolbar from './components/layout/Toolbar';
-import MHeader from './components/layout/Header';
 import Contents from './components/layout/Contents';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';

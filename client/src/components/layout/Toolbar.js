@@ -1,7 +1,19 @@
 import React from 'react';
-import './Toolbar.css';
+import styles from './Toolbar.css';
 
 class Toolbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
+  }
+  menuClick() {
+    this.setState({
+      active: !this.state.active
+    });
+  }
+
   render() {
     return (
       <div class='toolbarDiv'>
@@ -9,7 +21,7 @@ class Toolbar extends React.Component {
           <img class="mainLogo" src="https://source.unsplash.com/random" />
         </div>
         <div class="navDiv">
-          <a href="http://bigbiture.com">Home</a>
+          <a href="http://bigbiture.com"><i class="fa fa-home"></i></a>
           <div class="dropdown">
             <button class="dropbtn">게시판<i class="fa fa-caret-down"></i>
             </button>
@@ -36,6 +48,32 @@ class Toolbar extends React.Component {
               <a href="#">흑우 인증</a>
             </div>
           </div>
+        </div>
+        <div class="serach">
+          <i class="fa fa-search"></i>
+          <input class="main-search"></input>
+        </div>
+        <div class="m-menu">
+          <i class="fa fa-bars" onClick={function(e) {
+            this.menuClick();
+          }.bind(this)}></i>
+          {
+            this.state.active?
+            <div class='fullScreen'>
+              <div class="backScreen" onClick={function(e) {
+                this.menuClick();
+              }.bind(this)}></div>
+              <div class="m-menuList">
+                <div class='m-login'>로그인</div>
+                <button class='m-join'>
+                  <div>가입하기</div>
+                </button>
+                <div class='underline'></div>
+              </div>
+            </div>
+            :null
+          }
+            
         </div>
         <div class="loginDiv">
           <a href="" class="loginBtn">로그인</a>

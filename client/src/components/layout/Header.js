@@ -8,18 +8,19 @@ class Header extends React.Component {
       method: 'get',
       url: '/api'
     })
-    .then(function (res) {
-      console.log(res.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+      .then(function (res) {
+        console.log(res.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
   render() {
-    return(
+    return (
       <div class="headerDiv">
-        <div class='width'>
-          <div>
+        <div class='wrap width'>
+          <div class='exchangeQuotes'>
+            
             <table>
               <tr>
                 <th>거래소</th>
@@ -35,6 +36,13 @@ class Header extends React.Component {
                 <td>9,100,100</td>
                 <td>△ 274,000 +2.68%</td>
                 <td>+29,263 +0.28%	</td>
+                <td>1,077 BTC</td>
+              </tr>
+              <tr>
+                <td>빗썸</td>
+                <td>10,100,100</td>
+                <td>9,100,100</td>
+                <td>△ 274,000 +2.68%</td>
                 <td>+29,263 +0.28%	</td>
                 <td>1,077 BTC</td>
               </tr>
@@ -44,7 +52,6 @@ class Header extends React.Component {
                 <td>9,100,100</td>
                 <td>△ 274,000 +2.68%</td>
                 <td>+29,263 +0.28%	</td>
-                <td>+29,263 +0.28%	</td>
                 <td>1,077 BTC</td>
               </tr>
               <tr>
@@ -52,34 +59,24 @@ class Header extends React.Component {
                 <td>10,100,100</td>
                 <td>9,100,100</td>
                 <td>△ 274,000 +2.68%</td>
-                <td>+29,263 +0.28%	</td>
-                <td>+29,263 +0.28%	</td>
-                <td>1,077 BTC</td>
-              </tr>
-              <tr>
-                <td>빗썸</td>
-                <td>10,100,100</td>
-                <td>9,100,100</td>
-                <td>△ 274,000 +2.68%</td>
-                <td>+29,263 +0.28%	</td>
                 <td>+29,263 +0.28%	</td>
                 <td>1,077 BTC</td>
               </tr>
             </table>
           </div>
           <div>
-            <div id="top-10">
+            <div class="top10">
               <span>인기글</span>
               <ol>
-                <li>인기글 1</li>
-                <li>인기글 1222</li>
-                <li>인기글 1222123</li>
-                <li>인기글 1222</li>
-                <li>인기글 1222123</li>
-                <li>인기글 1222</li>
-                <li>인기글 1222123</li>
-                <li>인기글 1222</li>
-                <li>인기글 1222123</li>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
+                <a href="123"><li>인기글 1</li></a>
               </ol>
             </div>
           </div>
