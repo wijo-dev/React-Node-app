@@ -1,4 +1,4 @@
-.toolbarDiv {
+.toolbar {
   height: 60px;
   background: #12161C;
   text-align: center;
@@ -170,6 +170,7 @@
   height: 100vh;
   width: 100vw;
   margin: 0px 0px 80px;
+  display: none;
 }
 .backScreen {
   box-sizing: border-box;
