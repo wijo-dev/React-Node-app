@@ -5,7 +5,8 @@ import Toolbar from './layout/Toolbar';
 import Contents from './layout/Contents';
 import Footer from './layout/Footer';
 import Login from './components/join/login';
-import IndexContents from './components/IndexContents';
+import Home from './components/Home';
+import Header from './layout/Header';
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
   return (
     <div id='app'>
       <Toolbar></Toolbar>
+      <Header></Header>
       <Switch>
-        <Route exact={true} path="/" component={IndexContents} />
+        <Route exact={true} path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/:path" component={Contents} />
       </Switch>

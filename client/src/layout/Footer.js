@@ -1,9 +1,11 @@
 import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return(
-    <div>
-      <h1>Footer</h1>
+    <div className="footer">
+      <p>금일 방문자수 : 11111</p>
+      <p>Email : wijo.dev@gmail.com</p>
     </div>
   )
 }

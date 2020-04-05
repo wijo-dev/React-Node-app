@@ -38,6 +38,14 @@ td {
 /* Zebra Stripe Rows */
 tr td { background: none; }
 
+@media (max-width: 380px) {
+  .liveUSD {display: none;}
+  .korPre {display: none;}
+  .wrap {width:auto;}
+}
+
+
+
 .top10 {
   border: 1px solid;
   padding: 8px;
